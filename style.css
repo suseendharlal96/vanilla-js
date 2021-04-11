@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: lightblue;
+  color: brown;
+  min-height: 100vh;
+}
+header {
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+}
+header,
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  outline: none;
+}
+
+form button {
+  border-left: 1px solid #000000;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: violet;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo-container {
+  margin-bottom: 0.5rem;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.todo-item {
+  padding: 0.5rem;
+  flex: 1;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.trash-btn,
+.check-btn {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.check-btn {
+  background: rgb(30, 228, 30);
+}
+
+.fade-down {
+  transform: rotate(180deg);
+  opacity: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.select {
+  margin-bottom: 2rem;
+  margin-left: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  color: black;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #000000;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+}
+.select:hover::after {
+  background-color: #776a6a;
+  color: #ffffff;
+}
